@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Enter City", Toast.LENGTH_SHORT).show();
                 return;
             }
-            String url = "https://api.openweathermap.org/data/2.5/weather?q=patna&units=metric&appid=83759bdf8324339cbcc2776fc0336476";
+            String url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=83759bdf8324339cbcc2776fc0336476";
             new GetWeatherTask().execute(url);
         });
     }
